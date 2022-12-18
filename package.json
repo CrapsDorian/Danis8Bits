@@ -4,9 +4,9 @@
   "description": "web2 frontend boilerplate to facilitate deployment to GitHub pages & authentication",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist",
-    "dev": "webpack --mode development && cp dist/index.html dist/404.html",
-    "build": "webpack --mode production && cp dist/index.html dist/404.html",
-    "start": "webpack serve --mode development"
+    "dev": "webpack.config --mode development && cp dist/index.html dist/404.html",
+    "build": "webpack.config --mode production && cp dist/index.html dist/404.html",
+    "start": "webpack.config serve --mode development"
   },
   "author": "e-baron",
   "license": "CC-BY-SA-4.0",
